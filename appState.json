@@ -1,0 +1,101 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "6c30d697-fb11-4b9f-9f52-e00c0569f3c6": {
+        "id": "6c30d697-fb11-4b9f-9f52-e00c0569f3c6",
+        "parent": null,
+        "name": "ksnsresourcepythondemo.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ksnsresourcepythondemo.py",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 20
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "ksnsresourcepythondemo"
+        },
+        "triggers": [],
+        "lastUpdated": 1604315329151,
+        "testCases": {
+          "2e32e6ba-303a-4ab4-9394-4fdb3f231d03": {
+            "id": "2e32e6ba-303a-4ab4-9394-4fdb3f231d03",
+            "name": "Test event",
+            "functionId": "6c30d697-fb11-4b9f-9f52-e00c0569f3c6",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "6c30d697-fb11-4b9f-9f52-e00c0569f3c6"
+    ],
+    "currentFileId": "6c30d697-fb11-4b9f-9f52-e00c0569f3c6",
+    "resources": {
+      "snsktopic": {
+        "name": "snsktopic",
+        "type": "SNS",
+        "config": {
+          "topicMode": 1,
+          "topicName": "ktopic",
+          "topicArn": "arn:aws:sns:us-east-1:263248768798:ktopic",
+          "snsType": 0,
+          "subscriptions": []
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "ksnsresourcepythondemo",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1604315367977
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "ksnsresourcepythondemo",
+      "url": "https://github.com/Kumudikatest/ksnsresourcepythondemo"
+    }
+  }
+}
